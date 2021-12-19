@@ -10,9 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
-    </div>
+    <form method="POST">
+      <input class="input" name="input" type="text" required minlength="20" />
+      <input class="input" name="name-slug" pattern="/^[0-9A-Za-z\s\-]+$/" type="text" required  />
+      <input class="input" name="number-of-contributes" type="number" required minlength="1" maxlength="100" />
+      <input class="input" name="maximum-number-of-branches" type="number" required minlength="1" maxlength="100" />
+    </form>
   </body>
 </html>
